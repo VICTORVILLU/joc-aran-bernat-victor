@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://px8wgm2e67go"
-path="res://.godot/imported/lpc-tileset-terrain-spring.png-810b4b895e5051461ff74b5f20a45f70.ctex"
+uid="uid://20p7iaijpjyv"
+path="res://.godot/imported/lpc-tileset-terrain-autumn.png-04596dfa899214eb62c25fee4fafae01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://lpc-tileset-terrain-spring.png"
-dest_files=["res://.godot/imported/lpc-tileset-terrain-spring.png-810b4b895e5051461ff74b5f20a45f70.ctex"]
+source_file="res://Assets/Tilemaps/lpc-tileset-terrain-autumn.png"
+dest_files=["res://.godot/imported/lpc-tileset-terrain-autumn.png-04596dfa899214eb62c25fee4fafae01.ctex"]
 
 [params]
 

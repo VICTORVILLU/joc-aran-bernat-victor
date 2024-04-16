@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhobc7rwxessn"
-path="res://.godot/imported/lpc-tileset-terrain-winter.png-bb06de621a8988e224281138de8b67ac.ctex"
+path="res://.godot/imported/lpc-tileset-terrain-winter.png-26541eff2433807edc76e046cfdc3a10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://lpc-tileset-terrain-winter.png"
-dest_files=["res://.godot/imported/lpc-tileset-terrain-winter.png-bb06de621a8988e224281138de8b67ac.ctex"]
+source_file="res://Assets/Tilemaps/lpc-tileset-terrain-winter.png"
+dest_files=["res://.godot/imported/lpc-tileset-terrain-winter.png-26541eff2433807edc76e046cfdc3a10.ctex"]
 
 [params]
 
