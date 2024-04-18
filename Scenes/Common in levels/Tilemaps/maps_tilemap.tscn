@@ -26,5 +26,6 @@ texture_region_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_wodfd")
 
 [node name="MapsTilemap" type="TileMap"]
+position = Vector2(8, 8)
 tile_set = SubResource("TileSet_6mueg")
 format = 2
