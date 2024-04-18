@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://px8wgm2e67go"
-path="res://.godot/imported/lpc-tileset-terrain-spring.png-ea5d908c7f38e3a5d0e0e7078e5cac8f.ctex"
+uid="uid://o4q0l3lg1eo6"
+path="res://.godot/imported/testing_player.svg-04adf3089f750cda3cd4e517b28c00a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilemaps/lpc-tileset-terrain-spring.png"
-dest_files=["res://.godot/imported/lpc-tileset-terrain-spring.png-ea5d908c7f38e3a5d0e0e7078e5cac8f.ctex"]
+source_file="res://Assets/Player/testing_player.svg"
+dest_files=["res://.godot/imported/testing_player.svg-04adf3089f750cda3cd4e517b28c00a3.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
