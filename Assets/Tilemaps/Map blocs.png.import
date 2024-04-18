@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhobc7rwxessn"
-path="res://.godot/imported/lpc-tileset-terrain-winter.png-26541eff2433807edc76e046cfdc3a10.ctex"
+uid="uid://cfdvdrotwm1kx"
+path="res://.godot/imported/Map blocs.png-55b559d555e810018e67580f9b19b27f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilemaps/lpc-tileset-terrain-winter.png"
-dest_files=["res://.godot/imported/lpc-tileset-terrain-winter.png-26541eff2433807edc76e046cfdc3a10.ctex"]
+source_file="res://Assets/Tilemaps/Map blocs.png"
+dest_files=["res://.godot/imported/Map blocs.png-55b559d555e810018e67580f9b19b27f.ctex"]
 
 [params]
 
