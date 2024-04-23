@@ -1,6 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://dnhs020x33f5"]
+[gd_scene load_steps=15 format=3 uid="uid://dnhs020x33f5"]
 
-[ext_resource type="Texture2D" uid="uid://cwijeb0l8iqhf" path="res://Assets/Player/Fire/run-preview.png" id="1_meq31"]
+[ext_resource type="Texture2D" uid="uid://cwijeb0l8iqhf" path="res://Assets/Player/Fire/Run/run-preview.png" id="1_meq31"]
+[ext_resource type="Texture2D" uid="uid://bslqtj4mlddf5" path="res://Assets/Player/Fire/Air/jump-1.png" id="1_n4c0g"]
+[ext_resource type="Texture2D" uid="uid://wc0g7btppaa6" path="res://Assets/Player/Fire/Air/jump-4.png" id="1_xiffp"]
+[ext_resource type="Texture2D" uid="uid://87lciqi1s0mt" path="res://Assets/Player/Fire/Air/jump-3.png" id="2_g4lly"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o576o"]
 atlas = ExtResource("1_meq31")
@@ -38,6 +41,20 @@ region = Rect2(357, 0, 51, 45)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("1_n4c0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g4lly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_xiffp")
+}],
+"loop": false,
+"name": &"air",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_o576o")
 }, {
 "duration": 1.0,
@@ -62,20 +79,23 @@ animations = [{
 "texture": SubResource("AtlasTexture_n7j1o")
 }],
 "loop": true,
-"name": &"default",
+"name": &"run",
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ylbgb"]
-size = Vector2(21, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q1vq4"]
+size = Vector2(20, 24)
 
 [node name="Fire" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0.283331, -0.249998)
+position = Vector2(0, -4.76837e-07)
+scale = Vector2(0.861111, 0.861111)
 sprite_frames = SubResource("SpriteFrames_pvcdi")
-frame_progress = 0.935611
+animation = &"air"
+frame = 2
+frame_progress = 1.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 8)
-shape = SubResource("RectangleShape2D_ylbgb")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("RectangleShape2D_q1vq4")

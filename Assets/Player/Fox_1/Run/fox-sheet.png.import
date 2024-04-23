@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0yhi6bqc24i3"
-path="res://.godot/imported/player-run-6.png-01da4da48b1af2927ddeb15c85927f70.ctex"
+uid="uid://b1axmbqpjuemn"
+path="res://.godot/imported/fox-sheet.png-f0e36b7f9547f4816f9482ba96807777.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Squirrel/player-run-6.png"
-dest_files=["res://.godot/imported/player-run-6.png-01da4da48b1af2927ddeb15c85927f70.ctex"]
+source_file="res://Assets/Player/Fox_1/Run/fox-sheet.png"
+dest_files=["res://.godot/imported/fox-sheet.png-f0e36b7f9547f4816f9482ba96807777.ctex"]
 
 [params]
 
