@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cduwl5osjcn0v"]
+[gd_scene load_steps=7 format=3 uid="uid://cduwl5osjcn0v"]
 
 [ext_resource type="Script" path="res://Scripts/Menu/menu.gd" id="1_mcyql"]
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="2_t47cr"]
+[ext_resource type="Texture2D" uid="uid://cnej40duj0uux" path="res://Assets/Player/Squirrel/Run/player-run-3.png" id="3_y5k3d"]
+[ext_resource type="Texture2D" uid="uid://cpqc4ih3tf4aj" path="res://Assets/Player/Fox_2/Run/player-run-1.png" id="4_ewgee"]
+[ext_resource type="Texture2D" uid="uid://b1axmbqpjuemn" path="res://Assets/Player/Fox_1/Run/fox-sheet.png" id="5_uqbb4"]
+[ext_resource type="Texture2D" uid="uid://cwijeb0l8iqhf" path="res://Assets/Player/Fire/Run/run-preview.png" id="6_0oli7"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -19,3 +23,30 @@ layer_0/tile_data = PackedInt32Array(-1, 65536, 3, -65536, 65536, 3, -65535, 655
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+scale = Vector2(0.954271, 1.1845)
+
+[node name="Player-run-3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(176, 624)
+scale = Vector2(1, 1.00291)
+texture = ExtResource("3_y5k3d")
+
+[node name="Player-run-1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(176, 552)
+scale = Vector2(0.905199, 0.93125)
+texture = ExtResource("4_ewgee")
+
+[node name="Fox-sheet" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(168, 504)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_uqbb4")
+region_enabled = true
+region_rect = Rect2(0, 0, 77.9558, 37.5048)
+
+[node name="Run-preview" type="Sprite2D" parent="."]
+position = Vector2(160, 416)
+texture = ExtResource("6_0oli7")
+region_enabled = true
+region_rect = Rect2(210.526, 0.394768, 35.9211, 44.1316)
