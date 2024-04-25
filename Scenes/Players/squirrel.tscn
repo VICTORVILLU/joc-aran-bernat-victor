@@ -63,8 +63,8 @@ size = Vector2(20, 24)
 position = Vector2(1, -1)
 scale = Vector2(0.913793, 0.913793)
 sprite_frames = SubResource("SpriteFrames_ael5m")
-animation = &"air"
-frame_progress = 0.831463
+animation = &"run"
+frame_progress = 0.437574
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 5)

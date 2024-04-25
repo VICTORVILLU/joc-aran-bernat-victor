@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cqsvfixmhkd18"]
+[gd_scene load_steps=13 format=3 uid="uid://cqsvfixmhkd18"]
 
 [ext_resource type="Script" path="res://Scenes/Players/fox_1.gd" id="1_d76l5"]
 [ext_resource type="Texture2D" uid="uid://b1axmbqpjuemn" path="res://Assets/Player/Fox_1/Run/fox-sheet.png" id="1_k432e"]
@@ -70,19 +70,10 @@ animations = [{
 "speed": 11.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rsgdk"]
-size = Vector2(20, 24)
-
 [node name="Fox_1" type="CharacterBody2D"]
 script = ExtResource("1_d76l5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -5.96046e-08)
-scale = Vector2(0.944444, 0.944444)
 sprite_frames = SubResource("SpriteFrames_dfbdt")
 animation = &"run"
-frame_progress = 0.101992
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 5)
-shape = SubResource("RectangleShape2D_rsgdk")
