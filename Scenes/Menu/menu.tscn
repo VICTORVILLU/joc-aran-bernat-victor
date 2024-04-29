@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cduwl5osjcn0v"]
+[gd_scene load_steps=10 format=3 uid="uid://cduwl5osjcn0v"]
 
 [ext_resource type="Script" path="res://Scripts/Menu/menu.gd" id="1_mcyql"]
+[ext_resource type="Texture2D" uid="uid://defnn4uhwvwu4" path="res://Assets/Backgrounds/backgroundEmpty.png" id="2_ke8kj"]
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="2_t47cr"]
+[ext_resource type="Texture2D" uid="uid://cnej40duj0uux" path="res://Assets/Player/Squirrel/Run/player-run-3.png" id="3_y5k3d"]
+[ext_resource type="Texture2D" uid="uid://cpqc4ih3tf4aj" path="res://Assets/Player/Fox_2/Run/player-run-1.png" id="4_ewgee"]
+[ext_resource type="Texture2D" uid="uid://b1axmbqpjuemn" path="res://Assets/Player/Fox_1/Run/fox-sheet.png" id="5_uqbb4"]
+[ext_resource type="Texture2D" uid="uid://cwijeb0l8iqhf" path="res://Assets/Player/Fire/Run/run-preview.png" id="6_0oli7"]
+[ext_resource type="Texture2D" uid="uid://nttbpgrf7gny" path="res://Assets/Backgrounds/laserGreen03.png" id="8_o77i6"]
+[ext_resource type="Texture2D" uid="uid://ttefaobwge36" path="res://Assets/Backgrounds/laserGreen16.png" id="9_4opce"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -12,6 +19,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mcyql")
 
+[node name="BackgroundEmpty" type="Sprite2D" parent="."]
+position = Vector2(960, 548)
+scale = Vector2(2, 1.21094)
+texture = ExtResource("2_ke8kj")
+
 [node name="MapsTilemap" parent="." instance=ExtResource("2_t47cr")]
 layer_0/tile_data = PackedInt32Array(-1, 65536, 3, -65536, 65536, 3, -65535, 65536, 3, -65534, 65536, 3, -65533, 65536, 3, -65532, 65536, 3, -65531, 65536, 3, -65530, 65536, 3, -65529, 65536, 3, -65528, 65536, 3, -65527, 65536, 3, -65526, 65536, 3, -65525, 65536, 3, -65524, 65536, 3, -65523, 65536, 3, -65522, 65536, 3, -65521, 65536, 3, -65520, 65536, 3, -65519, 65536, 3, -65518, 65536, 3, -65517, 65536, 3, -65516, 65536, 3, -65515, 65536, 3, -65514, 65536, 3, 65535, 0, 2, 131071, 0, 2, 196607, 0, 2, 262143, 0, 2, 327679, 0, 2, 393215, 0, 2, 458751, 0, 2, 524287, 0, 2, 589823, 0, 2, 655359, 196608, 1, 720895, 196608, 1, 786431, 196608, 1, 851967, 196608, 1, 917503, 196608, 1, -65513, 0, 2, -65512, 0, 1, -65511, 0, 1, -65510, 0, 1, -65509, 0, 1, -65508, 0, 1, -65507, 0, 1, 1114128, 0, 1, 1114129, 0, 1, 1114130, 0, 1, 1114131, 0, 1, 1114132, 0, 1, 1114133, 0, 1, 1114134, 0, 1, 1114135, 0, 1, 1114136, 0, 1, 1114137, 0, 1, 1114138, 0, 1, 1114139, 0, 1, 1114140, 0, 1, 1114141, 0, 1, 1114142, 0, 1, -65506, 0, 1, 30, 0, 1, 65566, 0, 1, 131102, 0, 1, 196638, 0, 1, 262174, 0, 1, 327710, 0, 1, 393246, 0, 1, 458782, 0, 1, 524318, 0, 1, 589854, 0, 1, 655390, 0, 1, 720926, 0, 1, 786462, 0, 1, 851998, 0, 1, 917534, 0, 1, 983070, 0, 1, 983039, 196608, 1, 1048575, 0, 1, 1114111, 0, 1, 1179647, 0, 1, 1114112, 0, 1, 1114113, 0, 1, 1114114, 0, 1, 1114115, 0, 1, 1114116, 0, 1, 1114117, 0, 1, 1114118, 0, 1, 1114119, 0, 1, 1114120, 0, 1, 1114121, 0, 1, 1114122, 0, 1, 1114123, 0, 1, 1114124, 0, 1, 1114125, 0, 1, 1114126, 0, 1, 1114127, 0, 1, 1048606, 0, 1, 131075, 131072, 0, 131074, 65536, 0, 196609, 196608, 1, 262145, 196608, 1, 327681, 196608, 1, 393217, 196608, 1, 458753, 196608, 1, 524289, 196608, 1, 589825, 196608, 1, 655361, 196608, 1, 720897, 196608, 1, 786433, 196608, 1, 851969, 196608, 1, 917506, 65536, 0, 917507, 131072, 0, 917505, 0, 3, 131073, 0, 1, 458758, 0, 1, 524294, 0, 2, 524295, 131072, 2, 458759, 131072, 1, 589830, 0, 3, 589831, 131072, 3, 851974, 65536, 0, 851975, 65536, 0, 851976, 65536, 0, 851977, 131072, 0, 851973, 0, 0, 524298, 0, 0, 524299, 65536, 0, 524300, 65536, 0, 524301, 131072, 0, 786444, 0, 0, 786445, 65536, 0, 786446, 65536, 0, 786447, 65536, 0, 786448, 131072, 0, 196613, 0, 0, 196614, 65536, 0, 196615, 65536, 0, 196616, 65536, 0, 196617, 131072, 0, 262156, 0, 0, 262157, 65536, 0, 262158, 65536, 0, 262159, 65536, 0, 262160, 131072, 0, 524304, 0, 0, 524305, 131072, 0, 524307, 0, 0, 524308, 131072, 0, 327702, 65536, 0, 393239, 196608, 1, 458775, 196608, 1, 524311, 196608, 1, 589847, 196608, 1, 655383, 196608, 1, 720918, 65536, 0, 327701, 0, 0, 720917, 0, 0, 327703, 131072, 1, 720919, 131072, 3)
 
@@ -19,3 +31,47 @@ layer_0/tile_data = PackedInt32Array(-1, 65536, 3, -65536, 65536, 3, -65535, 655
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+scale = Vector2(0.954271, 1.1845)
+
+[node name="Player-run-3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(432, 792)
+scale = Vector2(2, 2.006)
+texture = ExtResource("3_y5k3d")
+
+[node name="Player-run-1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(454.875, 409.114)
+scale = Vector2(2.49242, 2.56963)
+texture = ExtResource("4_ewgee")
+
+[node name="Fox-sheet" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(480, 293)
+rotation = 3.14159
+scale = Vector2(-2, 2)
+skew = 0.0523599
+texture = ExtResource("5_uqbb4")
+region_enabled = true
+region_rect = Rect2(0, 0, 77.9558, 37.5048)
+
+[node name="Run-preview" type="Sprite2D" parent="."]
+position = Vector2(455, 686)
+rotation = 3.14159
+scale = Vector2(-2.143, 2.091)
+texture = ExtResource("6_0oli7")
+region_enabled = true
+region_rect = Rect2(210.526, 0.394768, 35.9211, 44.1316)
+
+[node name="LaserGreen03" type="Sprite2D" parent="."]
+position = Vector2(1400, 544)
+scale = Vector2(1, 5.61403)
+texture = ExtResource("8_o77i6")
+
+[node name="LaserGreen16" type="Sprite2D" parent="."]
+position = Vector2(1400, 688)
+texture = ExtResource("9_4opce")
+
+[node name="LaserGreen17" type="Sprite2D" parent="."]
+position = Vector2(1400, 400)
+texture = ExtResource("9_4opce")
