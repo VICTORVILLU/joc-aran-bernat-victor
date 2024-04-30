@@ -51,9 +51,11 @@ region_enabled = true
 region_rect = Rect2(0, 0, 77.9558, 37.5048)
 
 [node name="Run-preview" type="Sprite2D" parent="."]
-position = Vector2(212.676, 266.351)
+modulate = Color(0.764706, 0.964706, 0, 1)
+self_modulate = Color(1, 1, 0.329412, 1)
+position = Vector2(209.703, 266.351)
 rotation = 3.14159
-scale = Vector2(-4.41018, 3.51605)
+scale = Vector2(-4.24029, 3.51605)
 texture = ExtResource("6_0oli7")
 region_enabled = true
 region_rect = Rect2(210.526, 0.394768, 35.9211, 44.1316)
