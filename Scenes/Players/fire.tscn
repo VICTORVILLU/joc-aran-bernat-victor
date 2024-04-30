@@ -1,5 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://dnhs020x33f5"]
+[gd_scene load_steps=16 format=3 uid="uid://dnhs020x33f5"]
 
+[ext_resource type="Script" path="res://Scripts/Personatges/fire.gd" id="1_3ecm1"]
 [ext_resource type="Texture2D" uid="uid://cwijeb0l8iqhf" path="res://Assets/Player/Fire/Run/run-preview.png" id="1_meq31"]
 [ext_resource type="Texture2D" uid="uid://bslqtj4mlddf5" path="res://Assets/Player/Fire/Air/jump-1.png" id="1_n4c0g"]
 [ext_resource type="Texture2D" uid="uid://wc0g7btppaa6" path="res://Assets/Player/Fire/Air/jump-4.png" id="1_xiffp"]
@@ -84,18 +85,17 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q1vq4"]
-size = Vector2(20, 24)
+size = Vector2(10, 15.5)
 
 [node name="Fire" type="CharacterBody2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_3ecm1")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -4.76837e-07)
-scale = Vector2(0.861111, 0.861111)
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.722, 0.722)
 sprite_frames = SubResource("SpriteFrames_pvcdi")
 animation = &"air"
-frame = 2
-frame_progress = 1.0
+offset = Vector2(0, -8.30684)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_q1vq4")
