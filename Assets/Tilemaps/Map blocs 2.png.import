@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://khk0k6ddlese"
-path="res://.godot/imported/Map blocs.png-55b559d555e810018e67580f9b19b27f.ctex"
+uid="uid://v78nh4vcawnn"
+path="res://.godot/imported/Map blocs 2.png-7f179666cc1cb82fa1e82801d9e7e802.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilemaps/Map blocs.png"
-dest_files=["res://.godot/imported/Map blocs.png-55b559d555e810018e67580f9b19b27f.ctex"]
+source_file="res://Assets/Tilemaps/Map blocs 2.png"
+dest_files=["res://.godot/imported/Map blocs 2.png-7f179666cc1cb82fa1e82801d9e7e802.ctex"]
 
 [params]
 

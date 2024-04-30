@@ -12,5 +12,5 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	if body.name in ["Player_1","Player_2"]:
+	if body.name in ["fire"]:
 		body.queue_free()

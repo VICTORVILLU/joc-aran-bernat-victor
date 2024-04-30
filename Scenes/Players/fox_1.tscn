@@ -71,7 +71,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0dtw2"]
-size = Vector2(27, 18)
+size = Vector2(27, 30.2222)
 
 [node name="Fox_1" type="CharacterBody2D"]
 script = ExtResource("1_d76l5")
@@ -83,5 +83,7 @@ animation = &"run"
 autoplay = "run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, 9)
+scale = Vector2(1, 1.04)
 shape = SubResource("RectangleShape2D_0dtw2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
