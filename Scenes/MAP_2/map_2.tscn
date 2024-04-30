@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvqmr6pji4a0k"]
+
+[ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="1_r3yhq"]
+
+[node name="Map_2" type="Node2D"]
+
+[node name="Fire" parent="." instance=ExtResource("1_r3yhq")]
+position = Vector2(126, 525)
