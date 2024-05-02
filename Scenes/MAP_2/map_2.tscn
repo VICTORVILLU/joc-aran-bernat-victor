@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bvqmr6pji4a0k"]
+[gd_scene load_steps=3 format=3 uid="uid://bvqmr6pji4a0k"]
 
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="1_r3yhq"]
+[ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="2_s1ax5"]
 
 [node name="Map_2" type="Node2D"]
 
 [node name="Fire" parent="." instance=ExtResource("1_r3yhq")]
 position = Vector2(126, 525)
+
+[node name="MapsTilemap" parent="." instance=ExtResource("2_s1ax5")]
