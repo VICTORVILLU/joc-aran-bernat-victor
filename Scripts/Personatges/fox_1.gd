@@ -1,28 +1,43 @@
 extends CharacterBody2D
 
 
-const SPEED = 200.0
+const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
+var change_gravity = true
+var gravity = true
+var invertit = false:
+	set(nova_inversio):
+		invertit = nova_inversio
+		if invertit:
+			$Animation.flip_v = true
+			$Normal.set_deferred("disabled", true)
+			$Invertida.set_deferred("disabled", false)
+		else:
+			$Animation.flip_v = false
+			$Normal.set_deferred("disabled", false)
+			$Invertida.set_deferred("disabled", true)
 
 func _physics_process(delta):
 	# Add the gravity.
-	if is_on_floor():
-		$AnimatedSprite2D.play('run')
-		scale = Vector2(1,1)
-	elif not is_on_floor():
-		velocity.y += gravity * delta
-		$AnimatedSprite2D.play('air')
-		scale = Vector2(1,-1)
+	if gravity == true:
+		velocity.y = 600
+		invertit = false
+	elif gravity == false:
+		velocity.y = -600
+		invertit = true
 	# Handle jump.
-	if Input.is_action_just_pressed("player_1_controller") and (is_on_floor() or is_on_ceiling()) :
-		velocity.y *=-1
-	# 0.944
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	
+	if Input.is_action_just_pressed("player_fox_1") and (is_on_ceiling() or is_on_floor()):
+		gravity = !gravity
+	
+	velocity.x = 300
+	
+	#ANIMATION
+	
+	if is_on_ceiling() or is_on_floor():
+		$Animation.play("run")
+	else: $Animation.play("air")
+
 	move_and_slide()
