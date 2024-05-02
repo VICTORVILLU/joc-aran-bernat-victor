@@ -70,20 +70,17 @@ animations = [{
 "speed": 11.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0dtw2"]
-size = Vector2(27, 30.2222)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wiyb7"]
+size = Vector2(10, 15.5)
 
 [node name="Fox_1" type="CharacterBody2D"]
 script = ExtResource("1_d76l5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -6)
+scale = Vector2(0.555556, 0.555556)
 sprite_frames = SubResource("SpriteFrames_dfbdt")
 animation = &"run"
 autoplay = "run"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(1, 1.04)
-shape = SubResource("RectangleShape2D_0dtw2")
-
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wiyb7")
