@@ -85,7 +85,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q1vq4"]
-size = Vector2(10, 15.5)
+size = Vector2(12, 15.5)
 
 [node name="Fire" type="CharacterBody2D"]
 scale = Vector2(4, 4)
