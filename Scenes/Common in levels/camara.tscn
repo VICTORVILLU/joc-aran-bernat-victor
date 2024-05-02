@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://b04l6wbl7urab"]
+
+[ext_resource type="Script" path="res://Scripts/camara.gd" id="1_15oo8"]
+[ext_resource type="Script" path="res://Scripts/kill.gd" id="2_j5j2m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6v6fy"]
+size = Vector2(157, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ra2cl"]
+size = Vector2(53, 1016)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mm2y8"]
+size = Vector2(1232.5, 27)
+
+[node name="camara" type="CharacterBody2D"]
+script = ExtResource("1_15oo8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(78.5, -892)
+shape = SubResource("RectangleShape2D_6v6fy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(168, 320)
+
+[node name="Area2D" type="Area2D" parent="Camera2D"]
+script = ExtResource("2_j5j2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/Area2D"]
+position = Vector2(-688, -48)
+shape = SubResource("RectangleShape2D_ra2cl")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Camera2D/Area2D"]
+position = Vector2(16, -528)
+shape = SubResource("RectangleShape2D_mm2y8")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Camera2D/Area2D"]
+position = Vector2(88, 464)
+shape = SubResource("RectangleShape2D_mm2y8")
+
+[connection signal="body_entered" from="Camera2D/Area2D" to="Camera2D/Area2D" method="_on_body_entered"]
