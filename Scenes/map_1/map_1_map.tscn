@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://pbqyqtu2ehq7"]
 
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="1_qyntf"]
-[ext_resource type="PackedScene" path="res://Scenes/Common in levels/camara.tscn" id="2_g0fm5"]
+[ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="2_g0fm5"]
 [ext_resource type="PackedScene" uid="uid://cqsvfixmhkd18" path="res://Scenes/Players/fox_1.tscn" id="5_x4r5j"]
 
 [node name="Map1Map" type="Node2D"]
