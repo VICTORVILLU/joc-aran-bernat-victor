@@ -84,11 +84,10 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ik1n2"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xicjo"]
 size = Vector2(48, 62)
 
 [node name="Fire" type="CharacterBody2D"]
-scale = Vector2(4, 4)
 script = ExtResource("1_3ecm1")
 
 [node name="Animation" type="AnimatedSprite2D" parent="."]
@@ -98,4 +97,4 @@ animation = &"air"
 offset = Vector2(0, -8.30684)
 
 [node name="Normal" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_ik1n2")
+shape = SubResource("RectangleShape2D_xicjo")
