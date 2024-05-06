@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://31lp0g4emmhf"]
+
+[ext_resource type="Texture2D" uid="uid://cj8u7twej4t32" path="res://Assets/Tilemaps/trap.png" id="1_w1jdt"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k4sbd"]
+texture = ExtResource("1_w1jdt")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+2:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7wexd"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_k4sbd")
+
+[node name="trap" type="TileMap"]
+tile_set = SubResource("TileSet_7wexd")
+rendering_quadrant_size = 64
+format = 2
