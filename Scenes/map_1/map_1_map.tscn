@@ -15,6 +15,3 @@ layer_0/tile_data = PackedInt32Array(1245184, 1, 0, 1245185, 65537, 0, 1245186, 
 
 [node name="Fox_1" parent="." instance=ExtResource("5_x4r5j")]
 position = Vector2(32, 544)
-
-[node name="Fox_2" parent="." instance=ExtResource("5_x4r5j")]
-position = Vector2(32, 448)
