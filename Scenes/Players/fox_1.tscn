@@ -110,7 +110,7 @@ disabled = true
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 modulate = Color(0.705882, 0.282353, 0.0470588, 0.466667)
 show_behind_parent = true
-position = Vector2(-6, 6)
+position = Vector2(0, -16)
 process_material = SubResource("ParticleProcessMaterial_otj82")
 texture = ExtResource("6_rs1kn")
 lifetime = 2.0
