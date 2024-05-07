@@ -106,9 +106,11 @@ scale_curve = SubResource("CurveTexture_yh2e4")
 size = Vector2(48, 62)
 
 [node name="Fire" type="CharacterBody2D"]
+scale = Vector2(0.835, 0.835)
 script = ExtResource("1_3ecm1")
 
 [node name="Animation" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
 scale = Vector2(2.639, 2.639)
 sprite_frames = SubResource("SpriteFrames_pvcdi")
 animation = &"air"
@@ -118,6 +120,7 @@ offset = Vector2(0, -8.30684)
 shape = SubResource("RectangleShape2D_xicjo")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+visible = false
 modulate = Color(0.705882, 0.164706, 0.0470588, 0.466667)
 show_behind_parent = true
 position = Vector2(-6, 6)

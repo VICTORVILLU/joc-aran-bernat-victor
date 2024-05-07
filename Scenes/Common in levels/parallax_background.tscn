@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccxnmywxicll8"]
+
+[ext_resource type="Texture2D" uid="uid://6rlpokiqasu7" path="res://Assets/Backgrounds/cloudLayer2.png" id="1_4yco6"]
+[ext_resource type="Texture2D" uid="uid://dxmg4ttx0gj2e" path="res://Assets/Backgrounds/cloudLayerB1.png" id="2_it1wr"]
+[ext_resource type="Texture2D" uid="uid://dk5ijeix54rlj" path="res://Assets/Backgrounds/cloudLayer1.png" id="3_1ltna"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -568.0
+offset_top = -88.0
+offset_right = 14352.0
+offset_bottom = 288.0
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(1.2, 1.2)
+
+[node name="CloudLayer2" type="Sprite2D" parent="ParallaxLayer2"]
+texture_repeat = 2
+position = Vector2(6792, 152)
+texture = ExtResource("1_4yco6")
+region_enabled = true
+region_rect = Rect2(0, 0, 15000, 400)
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(1.5, 1.5)
+
+[node name="CloudLayerB1" type="Sprite2D" parent="ParallaxLayer3"]
+texture_repeat = 2
+position = Vector2(6456, 312)
+texture = ExtResource("2_it1wr")
+region_enabled = true
+region_rect = Rect2(0, 0, 15000, 400)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(1.7, 1.7)
+
+[node name="CloudLayer1" type="Sprite2D" parent="ParallaxLayer"]
+texture_repeat = 2
+position = Vector2(6648, 528)
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("3_1ltna")
+region_enabled = true
+region_rect = Rect2(0, 0, 15000, 400)
