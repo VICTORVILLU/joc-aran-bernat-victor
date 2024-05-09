@@ -29,7 +29,7 @@ func _physics_process(delta):
 		invertit = true
 	# Handle jump.
 	
-	if Input.is_action_just_pressed("player_fire") and (is_on_ceiling() or is_on_floor()):
+	if Input.is_action_just_pressed("player_fire_blue") and (is_on_ceiling() or is_on_floor()):
 		gravity = !gravity
 	
 	velocity.x = 300
