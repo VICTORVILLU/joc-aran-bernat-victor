@@ -18,7 +18,7 @@ func _on_button_button_down():
 
 func _on_button_button_up():
 	$BG_4.visible = false
-	print("Options")
+	get_tree().change_scene_to_file("res://Scenes/Menu/Options/Options.tscn")
 
 
 func _on_button_mouse_entered():

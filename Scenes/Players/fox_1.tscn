@@ -94,7 +94,6 @@ frame_progress = 0.681305
 offset = Vector2(0, -5.98442)
 
 [node name="Normal" type="CollisionShape2D" parent="."]
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_wiyb7")
 
 [node name="Invertida" type="CollisionShape2D" parent="."]
