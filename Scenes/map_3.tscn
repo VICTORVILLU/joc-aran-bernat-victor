@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dk5ijeix54rlj" path="res://Assets/Backgrounds/cloudLayer1.png" id="1_r2rlf"]
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="1_yjgxg"]
-[ext_resource type="PackedScene" path="res://Scenes/Common in levels/camara.tscn" id="2_pkvin"]
+[ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="2_pkvin"]
 
 [node name="Map_3" type="Node2D"]
 

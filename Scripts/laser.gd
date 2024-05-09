@@ -12,4 +12,8 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	body.queue_free()
+	
+	if body.name in ["Fire","fox_1"]:
+		body.queue_free()
+	elif body.name == "shuriken":
+		queue_free()
