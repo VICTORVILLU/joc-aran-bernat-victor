@@ -34,6 +34,7 @@ offset_bottom = 824.0
 color = Color(0, 0, 0, 1)
 
 [node name="Play_button" type="Node2D" parent="."]
+position = Vector2(-48, 0)
 script = ExtResource("3_georw")
 
 [node name="BG_1" type="ColorRect" parent="Play_button"]
@@ -86,7 +87,7 @@ offset_bottom = 256.0
 flat = true
 
 [node name="Options" type="Node2D" parent="."]
-position = Vector2(0, 256)
+position = Vector2(-48, 256)
 script = ExtResource("4_qls74")
 
 [node name="BG_1" type="ColorRect" parent="Options"]
@@ -130,20 +131,19 @@ offset_right = 1048.0
 offset_bottom = 256.0
 color = Color(0.196078, 0.196078, 0.494118, 0.443137)
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="Options"]
 modulate = Color(1, 1, 1, 0)
-layout_mode = 0
 offset_left = 424.0
-offset_top = 320.0
+offset_top = 64.0
 offset_right = 1048.0
-offset_bottom = 512.0
+offset_bottom = 256.0
 flat = true
 
 [connection signal="button_down" from="Play_button/Button" to="Play_button" method="_on_button_button_down"]
 [connection signal="button_up" from="Play_button/Button" to="Play_button" method="_on_button_button_up"]
 [connection signal="mouse_entered" from="Play_button/Button" to="Play_button" method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Play_button/Button" to="Play_button" method="_on_button_mouse_exited"]
-[connection signal="button_down" from="Button" to="Options" method="_on_button_button_down"]
-[connection signal="button_up" from="Button" to="Options" method="_on_button_button_up"]
-[connection signal="mouse_entered" from="Button" to="Options" method="_on_button_mouse_entered"]
-[connection signal="mouse_exited" from="Button" to="Options" method="_on_button_mouse_exited"]
+[connection signal="button_down" from="Options/Button" to="Options" method="_on_button_button_down"]
+[connection signal="button_up" from="Options/Button" to="Options" method="_on_button_button_up"]
+[connection signal="mouse_entered" from="Options/Button" to="Options" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Options/Button" to="Options" method="_on_button_mouse_exited"]

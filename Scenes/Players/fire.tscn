@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://dnhs020x33f5"]
 
-[ext_resource type="Script" path="res://Scripts/fire.gd" id="1_3ecm1"]
+[ext_resource type="Script" path="res://Scripts/Personatges/fire.gd" id="1_3ecm1"]
 [ext_resource type="Texture2D" uid="uid://cwijeb0l8iqhf" path="res://Assets/Player/Fire/Run/run-preview.png" id="1_meq31"]
 [ext_resource type="Texture2D" uid="uid://bslqtj4mlddf5" path="res://Assets/Player/Fire/Air/jump-1.png" id="1_n4c0g"]
 [ext_resource type="Texture2D" uid="uid://wc0g7btppaa6" path="res://Assets/Player/Fire/Air/jump-4.png" id="1_xiffp"]
@@ -86,7 +86,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xicjo"]
-size = Vector2(48, 62)
+size = Vector2(62.3234, 62)
 
 [sub_resource type="Curve" id="Curve_6fcpv"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.772152, 0.714286), -1.12346, -1.12346, 0, 0, Vector2(1, 0), -8.29548, 0.0, 0, 0]
@@ -103,7 +103,7 @@ scale_max = 0.75
 scale_curve = SubResource("CurveTexture_yh2e4")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p7d6m"]
-size = Vector2(48, 62)
+size = Vector2(62.3234, 62)
 
 [node name="Fire" type="CharacterBody2D"]
 scale = Vector2(0.835, 0.835)
@@ -118,6 +118,8 @@ frame_progress = 0.0655225
 offset = Vector2(0, -8.30684)
 
 [node name="Normal" type="CollisionShape2D" parent="."]
+position = Vector2(-7.16168, 0)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_xicjo")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
@@ -130,6 +132,7 @@ texture = ExtResource("6_nb58a")
 lifetime = 2.0
 
 [node name="Invertida" type="CollisionShape2D" parent="."]
-position = Vector2(0, -48)
+position = Vector2(-7.16168, -48)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_p7d6m")
 disabled = true
