@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfp6p2ncryj4o"]
+
+[ext_resource type="Texture2D" uid="uid://bcjd10g8eotxa" path="res://Assets/trap/Magic trap - Level 1.png" id="1_cx3ho"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gglki"]
+atlas = ExtResource("1_cx3ho")
+region = Rect2(448, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhub7"]
+atlas = ExtResource("1_cx3ho")
+region = Rect2(416, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pc5a"]
+atlas = ExtResource("1_cx3ho")
+region = Rect2(384, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_301cv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gglki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhub7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pc5a")
+}],
+"loop": true,
+"name": &"prova 1",
+"speed": 8.0
+}]
+
+[node name="Trampa_2" type="Node2D"]
+
+[node name="Trampa" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1, 0.5)
+sprite_frames = SubResource("SpriteFrames_301cv")
+animation = &"prova 1"
+autoplay = "prova 1"
+frame = 1
+frame_progress = 0.562589
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(6, 8, 6, 7, 5, 7, 5, 4, 4, 4, 4, 2, 3, 2, 3, -1, 2, -1, 2, -4, 1, -4, 1, -6, 0, -6, 0, -8, -1, -8, -1, -6, -2, -6, -2, -4, -2, -4, -3, -4, -3, -1, -4, -1, -4, 2, -5, 2, -5, 4, -5, 4, -5, 4, -6, 4, -6, 7, -7, 7, -7, 8)
