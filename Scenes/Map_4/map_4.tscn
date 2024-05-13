@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="1_rl37y"]
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="2_viwtt"]
 [ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="3_qe3kk"]
-[ext_resource type="PackedScene" path="res://Scenes/Common in levels/Tilemaps/trap.tscn" id="4_noo1a"]
+[ext_resource type="PackedScene" uid="uid://byif1tpflgwe2" path="res://Scenes/Common in levels/Tilemaps/trap.tscn" id="4_noo1a"]
 
 [node name="map_4" type="Node2D"]
 
