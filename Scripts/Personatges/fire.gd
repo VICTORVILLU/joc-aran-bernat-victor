@@ -49,9 +49,6 @@ func _physics_process(delta):
 		dispara()
 		Bales -= 1
 		
-
-	
-	
 	move_and_slide()
 
 func dispara():
