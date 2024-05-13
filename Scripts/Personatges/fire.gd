@@ -44,14 +44,13 @@ func _physics_process(delta):
 	if is_on_ceiling() or is_on_floor():
 		$Animation.play("run")
 	else: $Animation.play("air")
-	$Bala1.visible = false
 	if Input.is_action_just_pressed("dispara_vermell"):
-		$Bala1.visible = true
-		$Bala1.velocity = Vector2(650,0)
+		dispara()
+	
 	move_and_slide()
 
-#func dispara():
-	#var nova_bala = escena_bala.instantiate()
-	#Global.Bales.add_child(nova_bala)
-	#nova_bala.global_position = global_position
-	#nova_bala.velocity = 650
+func dispara():
+	var nova_bala = escena_bala.instantiate()
+	get_parent().add_child(nova_bala)
+	nova_bala.position = $Marker2D.global_position
+	

@@ -28,7 +28,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_rgcot")
 }],
-"loop": true,
+"loop": false,
 "name": &"air",
 "speed": 10.0
 }, {
@@ -50,14 +50,17 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e7o22"]
 size = Vector2(309, 310)
 
-[node name="escena_bala" type="StaticBody2D"]
-scale = Vector2(0.49, 0.49)
+[node name="escena_bala" type="CharacterBody2D"]
+modulate = Color(1, 0.231373, 0, 1)
+scale = Vector2(0.06, 0.06)
 script = ExtResource("1_cj54y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(7.101, 4.142, 1, 1)
 sprite_frames = SubResource("SpriteFrames_4h04j")
 animation = &"air"
-frame_progress = 0.211718
+frame = 4
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-7.5, -11)
