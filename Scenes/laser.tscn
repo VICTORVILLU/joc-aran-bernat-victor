@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b7wgkgebdh5gn"]
 
 [ext_resource type="Script" path="res://Scripts/laser.gd" id="1_47p58"]
-[ext_resource type="Texture2D" uid="uid://nttbpgrf7gny" path="res://Assets/Backgrounds/laserGreen03.png" id="1_rq3cj"]
+[ext_resource type="Texture2D" uid="uid://r4m8xkhf8iwi" path="res://Assets/CAhins/long_chain_piece.png" id="2_5jgk1"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_81e3y"]
 a = Vector2(0, -68)
@@ -11,13 +11,13 @@ b = Vector2(0, 65)
 modulate = Color(1, 0, 1, 1)
 script = ExtResource("1_47p58")
 
-[node name="Trampa Shuriken" type="Sprite2D" parent="."]
-modulate = Color(1, 0, 0.0705882, 1)
-texture_filter = 1
-scale = Vector2(1, 3.08772)
-texture = ExtResource("1_rq3cj")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("SegmentShape2D_81e3y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0.5225, 0.57, 1)
+position = Vector2(0, -0.20375)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("2_5jgk1")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
