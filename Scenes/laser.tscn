@@ -10,7 +10,7 @@ b = Vector2(0, 65)
 [node name="Laser" type="Area2D"]
 script = ExtResource("1_47p58")
 
-[node name="Tranpa Shuriken" type="Sprite2D" parent="."]
+[node name="Trampa Shuriken" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0.0705882, 1)
 texture_filter = 1
 scale = Vector2(1, 3.08772)

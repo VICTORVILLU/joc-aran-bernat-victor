@@ -113,12 +113,12 @@ script = ExtResource("1_3ecm1")
 modulate = Color(1, 0, 0, 1)
 scale = Vector2(2.639, 2.639)
 sprite_frames = SubResource("SpriteFrames_pvcdi")
-animation = &"air"
+animation = &"run"
+frame_progress = 0.0655225
 offset = Vector2(0, -8.30684)
 
 [node name="Normal" type="CollisionShape2D" parent="."]
 position = Vector2(-7.16168, 0)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_xicjo")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
@@ -132,6 +132,5 @@ lifetime = 2.0
 
 [node name="Invertida" type="CollisionShape2D" parent="."]
 position = Vector2(-7.16168, -48)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_p7d6m")
 disabled = true
