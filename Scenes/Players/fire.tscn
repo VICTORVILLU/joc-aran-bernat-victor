@@ -128,8 +128,7 @@ trail_section_subdivisions = 1
 modulate = Color(1, 0, 0, 1)
 scale = Vector2(2.639, 2.639)
 sprite_frames = SubResource("SpriteFrames_pvcdi")
-animation = &"run"
-frame_progress = 0.0655225
+animation = &"air"
 offset = Vector2(0, -8.30684)
 
 [node name="Normal" type="CollisionShape2D" parent="."]
