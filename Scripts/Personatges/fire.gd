@@ -48,7 +48,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("dispara_vermell") and Bales !=0 :
 		dispara()
 		Bales -= 1
-		
+	
 	move_and_slide()
 
 func dispara():

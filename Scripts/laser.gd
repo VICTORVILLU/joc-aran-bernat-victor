@@ -15,6 +15,6 @@ func _on_body_entered(body):
 	print(body.name)
 	if body.name in ["Fire","Fire_2"]:
 		body.queue_free()
-	elif body.name in ['escena_bala','@CharacterBody2D@2','@CharacterBody2D@3']:
+	elif body.name in ['escena_bala','escena_bala_blava','@CharacterBody2D@2','@CharacterBody2D@3','@CharacterBody2D@4','@CharacterBody2D@5','@CharacterBody2D@6']:
 		queue_free()
 	

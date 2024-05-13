@@ -13,8 +13,8 @@
 [node name="Map_3" type="Node2D"]
 script = ExtResource("1_jvo0g")
 
-[node name="Laser" parent="." instance=ExtResource("9_g7oiv")]
-position = Vector2(9616, 560)
+[node name="Laser2" parent="." instance=ExtResource("9_g7oiv")]
+position = Vector2(9616, 112)
 scale = Vector2(1, 1.04)
 
 [node name="MapsTilemap" parent="." instance=ExtResource("1_yjgxg")]
@@ -68,6 +68,6 @@ position = Vector2(153, 629)
 [node name="Fire_2" parent="." instance=ExtResource("7_p78qu")]
 position = Vector2(152, 192)
 
-[node name="Laser2" parent="." instance=ExtResource("9_g7oiv")]
-position = Vector2(3688, 328)
+[node name="Laser" parent="." instance=ExtResource("9_g7oiv")]
+position = Vector2(3256, 592)
 scale = Vector2(1, 1.04)
