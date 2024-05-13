@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="1_4k0mg"]
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="2_xf3md"]
-[ext_resource type="PackedScene" path="res://Scenes/Common in levels/camara.tscn" id="3_i65pr"]
+[ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="3_i65pr"]
 
 [node name="Map_tutorial" type="Node2D"]
 
