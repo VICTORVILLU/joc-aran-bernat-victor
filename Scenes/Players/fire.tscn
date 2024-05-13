@@ -115,7 +115,6 @@ escena_bala = ExtResource("2_pcusn")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 visible = false
-scale = Vector2(1, 1)
 process_material = SubResource("ParticleProcessMaterial_4lewf")
 texture = ExtResource("6_nb58a")
 visibility_rect = Rect2(-200, -100, 400, 100)

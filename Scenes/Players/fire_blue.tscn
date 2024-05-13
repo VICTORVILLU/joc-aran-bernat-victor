@@ -103,11 +103,9 @@ offset = Vector2(0, -8.30684)
 
 [node name="Normal" type="CollisionShape2D" parent="."]
 position = Vector2(-7.16168, 0)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_dalsy")
 
 [node name="Invertida" type="CollisionShape2D" parent="."]
 position = Vector2(-7.16168, -48)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_vuala")
 disabled = true
