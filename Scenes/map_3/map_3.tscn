@@ -18,10 +18,10 @@ layer_0/tile_data = PackedInt32Array(1376256, 196609, 3, 1376257, 65537, 0, 1376
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="ParallaxBackground"]
-offset_left = -1040.0
-offset_top = -56.0
-offset_right = 28736.0
-offset_bottom = 320.0
+offset_left = -807.0
+offset_top = -421.0
+offset_right = 28108.0
+offset_bottom = 244.0
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(1.5, 1.5)
@@ -49,7 +49,7 @@ motion_scale = Vector2(2, 2)
 
 [node name="CloudLayer1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_repeat = 2
-position = Vector2(12156, 544)
+position = Vector2(14812, 479)
 scale = Vector2(1.10533, 0.96)
 texture = ExtResource("1_r2rlf")
 region_enabled = true
