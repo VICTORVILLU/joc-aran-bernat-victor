@@ -12,8 +12,9 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	
-	if body.name in ["Fire","fox_1"]:
+	print(body.name)
+	if body.name in ["Fire","Fire_2"]:
 		body.queue_free()
-	elif body.name == "shuriken":
+	elif body.name in ['escena_bala','@CharacterBody2D@2','@CharacterBody2D@3']:
 		queue_free()
+	

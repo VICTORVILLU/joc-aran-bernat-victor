@@ -11,3 +11,4 @@ func _ready():
 func _process(delta):
 	$AnimatedSprite2D.play('air')
 	var collision_info = move_and_collide(Velocitat.normalized() * delta * speed)
+	

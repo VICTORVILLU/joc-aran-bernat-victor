@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-
+var Bales = 3
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var change_gravity = true
 var gravity = true
@@ -44,8 +44,13 @@ func _physics_process(delta):
 	if is_on_ceiling() or is_on_floor():
 		$Animation.play("run")
 	else: $Animation.play("air")
-	if Input.is_action_just_pressed("dispara_vermell"):
+	
+	if Input.is_action_just_pressed("dispara_vermell") and Bales !=0 :
 		dispara()
+		Bales -= 1
+		
+
+	
 	
 	move_and_slide()
 

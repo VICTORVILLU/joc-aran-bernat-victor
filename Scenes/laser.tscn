@@ -8,6 +8,7 @@ a = Vector2(0, -68)
 b = Vector2(0, 65)
 
 [node name="Laser" type="Area2D"]
+modulate = Color(1, 0, 1, 1)
 script = ExtResource("1_47p58")
 
 [node name="Trampa Shuriken" type="Sprite2D" parent="."]
