@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cr5r3sxt5thso"]
+[gd_scene load_steps=15 format=3 uid="uid://cr5r3sxt5thso"]
 
 [ext_resource type="Texture2D" uid="uid://cpqc4ih3tf4aj" path="res://Assets/Player/Fox_2/Run/player-run-1.png" id="1_4ia21"]
 [ext_resource type="Texture2D" uid="uid://b3rbs7t2nycd8" path="res://Assets/Player/Fox_2/Air/player-jump-1.png" id="1_l0yi2"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b6hcw248psxj6" path="res://Assets/Player/Fox_2/Run/player-run-4.png" id="4_dpnfd"]
 [ext_resource type="Texture2D" uid="uid://cyusm3nyaovqa" path="res://Assets/Player/Fox_2/Run/player-run-5.png" id="5_hse2c"]
 [ext_resource type="Texture2D" uid="uid://cljskx5a4d5hc" path="res://Assets/Player/Fox_2/Run/player-run-6.png" id="6_2lw00"]
+[ext_resource type="Texture2D" uid="uid://cqfmagbhj46xf" path="res://Assets/Player/stella.png" id="9_ne4dl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x33ys"]
 animations = [{
@@ -49,6 +50,19 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_emx4a"]
 size = Vector2(20, 24)
 
+[sub_resource type="Curve" id="Curve_dt3gk"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.772152, 0.714286), -1.12346, -1.12346, 0, 0, Vector2(1, 0), -8.29548, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_ogs2r"]
+curve = SubResource("Curve_dt3gk")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4xc05"]
+gravity = Vector3(-100, 0, 0)
+scale_min = 0.15
+scale_max = 0.2
+scale_curve = SubResource("CurveTexture_ogs2r")
+
 [node name="Fox_2" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -59,3 +73,15 @@ frame_progress = 0.441103
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_emx4a")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+modulate = Color(0.705882, 0.282353, 0.0470588, 0.466667)
+show_behind_parent = true
+position = Vector2(-6, 6)
+amount = 7
+process_material = SubResource("ParticleProcessMaterial_4xc05")
+texture = ExtResource("9_ne4dl")
+lifetime = 2.0
+trail_enabled = true
+trail_lifetime = 1.85
+trail_sections = 16
