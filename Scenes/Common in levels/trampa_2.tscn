@@ -1,45 +1,49 @@
-[gd_scene load_steps=6 format=3 uid="uid://dfp6p2ncryj4o"]
+[gd_scene load_steps=7 format=3 uid="uid://dfp6p2ncryj4o"]
 
 [ext_resource type="Texture2D" uid="uid://bcjd10g8eotxa" path="res://Assets/trap/Magic trap - Level 1.png" id="1_cx3ho"]
+[ext_resource type="Script" path="res://Scripts/trampa_2.gd" id="1_vulgi"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gglki"]
-atlas = ExtResource("1_cx3ho")
-region = Rect2(448, 0, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yhub7"]
-atlas = ExtResource("1_cx3ho")
-region = Rect2(416, 0, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4pc5a"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfvoe"]
 atlas = ExtResource("1_cx3ho")
 region = Rect2(384, 0, 16, 32)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_301cv"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ae06"]
+atlas = ExtResource("1_cx3ho")
+region = Rect2(416, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kiuqx"]
+atlas = ExtResource("1_cx3ho")
+region = Rect2(448, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j583h"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gglki")
+"texture": SubResource("AtlasTexture_pfvoe")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yhub7")
+"texture": SubResource("AtlasTexture_2ae06")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4pc5a")
+"texture": SubResource("AtlasTexture_kiuqx")
 }],
 "loop": true,
-"name": &"prova 1",
+"name": &"Pinxos",
 "speed": 8.0
 }]
 
-[node name="Trampa_2" type="Node2D"]
+[node name="Area2D" type="Area2D"]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_vulgi")
 
-[node name="Trampa" type="AnimatedSprite2D" parent="."]
-scale = Vector2(1, 0.5)
-sprite_frames = SubResource("SpriteFrames_301cv")
-animation = &"prova 1"
-autoplay = "prova 1"
-frame = 1
-frame_progress = 0.562589
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 1)
+sprite_frames = SubResource("SpriteFrames_j583h")
+animation = &"Pinxos"
+autoplay = "Pinxos"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(6, 8, 6, 7, 5, 7, 5, 4, 4, 4, 4, 2, 3, 2, 3, -1, 2, -1, 2, -4, 1, -4, 1, -6, 0, -6, 0, -8, -1, -8, -1, -6, -2, -6, -2, -4, -2, -4, -3, -4, -3, -1, -4, -1, -4, 2, -5, 2, -5, 4, -5, 4, -5, 4, -6, 4, -6, 7, -7, 7, -7, 8)
+scale = Vector2(1.5, 1.5)
+polygon = PackedVector2Array(0, -10.6667, 0, -7.11111, 1.33333, -7.11111, 1.33333, -4.44444, 2.66667, -4, 2.66667, 0.444444, 4, 0.888889, 4, 5.77778, 5.33333, 5.77778, 5.33333, 8.88889, 6.22222, 8.88889, 6.66667, 10.6667, 2.66667, 10.6667, -8, 10.6667, -8, 9.33333, -6.66667, 9.33333, -6.66667, 6.22222, -5.33333, 5.77778, -5.33333, 0, -4, 0.444444, -4.44444, -3.55556, -2.66667, -4, -2.66667, -8, -1.77778, -8.88889, -1.77778, -11.1111, -0.444444, -10.6667)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
