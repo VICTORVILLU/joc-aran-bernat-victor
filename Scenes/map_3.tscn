@@ -3,11 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://6rlpokiqasu7" path="res://Assets/Backgrounds/cloudLayer2.png" id="1_4gw3b"]
 [ext_resource type="Texture2D" uid="uid://dk5ijeix54rlj" path="res://Assets/Backgrounds/cloudLayer1.png" id="1_r2rlf"]
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="1_yjgxg"]
+<<<<<<< HEAD
+[ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="2_pkvin"]
+=======
 [ext_resource type="Texture2D" uid="uid://dxmg4ttx0gj2e" path="res://Assets/Backgrounds/cloudLayerB1.png" id="2_msiox"]
 [ext_resource type="PackedScene" path="res://Scenes/Common in levels/camara.tscn" id="2_pkvin"]
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="6_4nk88"]
 [ext_resource type="PackedScene" uid="uid://8mnnsbnk8h43" path="res://Scenes/Players/fire_blue.tscn" id="7_p78qu"]
 [ext_resource type="PackedScene" uid="uid://byif1tpflgwe2" path="res://Scenes/Common in levels/Tilemaps/trap.tscn" id="8_jk0jw"]
+>>>>>>> 3a94f1512a26fe5d1b9da8413514076770907c0c
 
 [node name="Map_3" type="Node2D"]
 
