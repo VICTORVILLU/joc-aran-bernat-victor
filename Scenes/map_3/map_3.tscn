@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://pdb0jp61alve"]
+[gd_scene load_steps=10 format=3 uid="uid://pdb0jp61alve"]
 
 [ext_resource type="Texture2D" uid="uid://6rlpokiqasu7" path="res://Assets/Backgrounds/cloudLayer2.png" id="1_4gw3b"]
 [ext_resource type="Script" path="res://Scripts/map_3.gd" id="1_jvo0g"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="2_pkvin"]
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="6_4nk88"]
 [ext_resource type="PackedScene" uid="uid://8mnnsbnk8h43" path="res://Scenes/Players/fire_blue.tscn" id="7_p78qu"]
+[ext_resource type="PackedScene" uid="uid://ntv6j76a385r" path="res://Scenes/node_2d.tscn" id="9_yujdl"]
 
 [node name="Map_3" type="Node2D"]
 script = ExtResource("1_jvo0g")
@@ -62,3 +63,6 @@ position = Vector2(144, 472)
 
 [node name="Fire_2" parent="." instance=ExtResource("7_p78qu")]
 position = Vector2(152, 192)
+
+[node name="Node2D" parent="." instance=ExtResource("9_yujdl")]
+position = Vector2(1400, 280)
