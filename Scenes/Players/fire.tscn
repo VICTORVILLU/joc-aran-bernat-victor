@@ -119,7 +119,6 @@ offset = Vector2(0, -8.30684)
 
 [node name="Normal" type="CollisionShape2D" parent="."]
 position = Vector2(-7.16168, 0)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_xicjo")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
@@ -133,6 +132,5 @@ lifetime = 2.0
 
 [node name="Invertida" type="CollisionShape2D" parent="."]
 position = Vector2(-7.16168, -48)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_p7d6m")
 disabled = true
