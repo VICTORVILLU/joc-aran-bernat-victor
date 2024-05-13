@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dnhs020x33f5"]
+[gd_scene load_steps=23 format=3 uid="uid://dnhs020x33f5"]
 
 [ext_resource type="Script" path="res://Scripts/Personatges/fire.gd" id="1_3ecm1"]
 [ext_resource type="Texture2D" uid="uid://cwijeb0l8iqhf" path="res://Assets/Player/Fire/Run/run-preview.png" id="1_meq31"]
@@ -6,7 +6,15 @@
 [ext_resource type="Texture2D" uid="uid://wc0g7btppaa6" path="res://Assets/Player/Fire/Air/jump-4.png" id="1_xiffp"]
 [ext_resource type="Texture2D" uid="uid://87lciqi1s0mt" path="res://Assets/Player/Fire/Air/jump-3.png" id="2_g4lly"]
 [ext_resource type="PackedScene" uid="uid://dydg6xpi2l0ae" path="res://Scenes/Players/Bala/escena_bala.tscn" id="2_pcusn"]
+[ext_resource type="Texture2D" uid="uid://cqfmagbhj46xf" path="res://Assets/Player/stella.png" id="6_nb58a"]
 [ext_resource type="Script" path="res://Scenes/Players/Line2D.gd" id="7_oju40"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4lewf"]
+emission_shape = 3
+emission_box_extents = Vector3(20, 10, 1)
+gravity = Vector3(-100, 1, 0)
+scale_min = 0.5
+scale_max = 0.7
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o576o"]
 atlas = ExtResource("1_meq31")
@@ -105,6 +113,17 @@ scale = Vector2(0.835, 0.835)
 script = ExtResource("1_3ecm1")
 escena_bala = ExtResource("2_pcusn")
 
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+visible = false
+process_material = SubResource("ParticleProcessMaterial_4lewf")
+texture = ExtResource("6_nb58a")
+visibility_rect = Rect2(-200, -100, 400, 100)
+local_coords = true
+trail_enabled = true
+trail_lifetime = 8.99
+trail_sections = 15
+trail_section_subdivisions = 1
+
 [node name="Animation" type="AnimatedSprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
 scale = Vector2(2.639, 2.639)
@@ -128,6 +147,3 @@ width = 40.0
 width_curve = SubResource("Curve_xyjhu")
 gradient = SubResource("Gradient_y6t05")
 script = ExtResource("7_oju40")
-
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(44.3114, 0)
