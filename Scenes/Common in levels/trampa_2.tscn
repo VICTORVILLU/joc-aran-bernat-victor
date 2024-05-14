@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dfp6p2ncryj4o"]
+[gd_scene load_steps=9 format=3 uid="uid://dfp6p2ncryj4o"]
 
 [ext_resource type="Texture2D" uid="uid://bcjd10g8eotxa" path="res://Assets/trap/Magic trap - Level 1.png" id="1_cx3ho"]
 [ext_resource type="Script" path="res://Scripts/trampa_2.gd" id="1_vulgi"]
@@ -29,21 +29,33 @@ animations = [{
 }],
 "loop": true,
 "name": &"Pinxos",
-"speed": 8.0
+"speed": 7.0
 }]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_4nkco"]
+a = Vector2(0, -10.6667)
+b = Vector2(-10.6667, 16)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_xvbuk"]
+a = Vector2(-1.33333, -10.6667)
+b = Vector2(8.66667, 16)
 
 [node name="Area2D" type="Area2D"]
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_vulgi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.0352941, 0.0823529, 0.423529, 1)
 scale = Vector2(2, 1)
 sprite_frames = SubResource("SpriteFrames_j583h")
 animation = &"Pinxos"
 autoplay = "Pinxos"
+frame_progress = 0.335586
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-scale = Vector2(1.5, 1.5)
-polygon = PackedVector2Array(0, -10.6667, 0, -7.11111, 1.33333, -7.11111, 1.33333, -4.44444, 2.66667, -4, 2.66667, 0.444444, 4, 0.888889, 4, 5.77778, 5.33333, 5.77778, 5.33333, 8.88889, 6.22222, 8.88889, 6.66667, 10.6667, 2.66667, 10.6667, -8, 10.6667, -8, 9.33333, -6.66667, 9.33333, -6.66667, 6.22222, -5.33333, 5.77778, -5.33333, 0, -4, 0.444444, -4.44444, -3.55556, -2.66667, -4, -2.66667, -8, -1.77778, -8.88889, -1.77778, -11.1111, -0.444444, -10.6667)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_4nkco")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_xvbuk")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
