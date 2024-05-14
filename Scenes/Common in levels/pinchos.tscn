@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c0kr6h70o3ynw"]
 
-[ext_resource type="Script" path="res://pinchos.gd" id="1_efkgj"]
+[ext_resource type="Script" path="res://Scripts/pinchos.gd" id="1_efkgj"]
 [ext_resource type="Texture2D" uid="uid://c3q7j6esq6aoi" path="res://Assets/CAhins/spikes_1.png" id="2_6bk1s"]
 
 [node name="pinchos" type="Area2D"]
