@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dd3fnproqluj0"]
 
 [ext_resource type="Script" path="res://Scenes/Map_4/map_4.gd" id="1_l3ot6"]
-[ext_resource type="PackedScene" uid="uid://b7wgkgebdh5gn" path="res://Scenes/laser.tscn" id="1_mafl3"]
+[ext_resource type="PackedScene" uid="uid://b7wgkgebdh5gn" path="res://Scenes/Players/laser.tscn" id="1_mafl3"]
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="1_rl37y"]
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="2_viwtt"]
 [ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="3_qe3kk"]

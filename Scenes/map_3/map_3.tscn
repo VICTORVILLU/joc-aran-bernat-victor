@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="2_pkvin"]
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="6_4nk88"]
 [ext_resource type="PackedScene" uid="uid://8mnnsbnk8h43" path="res://Scenes/Players/fire_blue.tscn" id="7_p78qu"]
-[ext_resource type="PackedScene" uid="uid://b7wgkgebdh5gn" path="res://Scenes/laser.tscn" id="9_g7oiv"]
+[ext_resource type="PackedScene" uid="uid://b7wgkgebdh5gn" path="res://Scenes/Players/laser.tscn" id="9_g7oiv"]
 [ext_resource type="PackedScene" uid="uid://c0kr6h70o3ynw" path="res://Scenes/Common in levels/pinchos.tscn" id="10_o7osi"]
 
 [node name="Map_3" type="Node2D"]
