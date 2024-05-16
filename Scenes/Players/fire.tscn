@@ -106,6 +106,7 @@ script = ExtResource("1_3ecm1")
 escena_bala = ExtResource("2_pcusn")
 
 [node name="Marker2D" type="Marker2D" parent="."]
+show_behind_parent = true
 scale = Vector2(1, 1)
 
 [node name="Animation" type="AnimatedSprite2D" parent="."]

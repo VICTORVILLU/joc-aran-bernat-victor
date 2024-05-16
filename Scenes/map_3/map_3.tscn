@@ -92,3 +92,7 @@ scale = Vector2(1, 1.04)
 [node name="Laser2" parent="." instance=ExtResource("9_g7oiv")]
 position = Vector2(9616, 96)
 scale = Vector2(1, 1.04)
+
+[node name="Laser3" parent="." instance=ExtResource("9_g7oiv")]
+position = Vector2(1104, 608)
+scale = Vector2(1, 1.04)

@@ -20,5 +20,4 @@ func _on_area_2d_body_entered(body):
 	if body.name in ["Laser","Laser2","Laser3","Laser4","Laser5","Laser6","Laser7","Laser8","Laser9", "Fire", "Fire_2", "bala_collision"]:
 		pass
 	else: 
-		print(body.name)
 		queue_free()
