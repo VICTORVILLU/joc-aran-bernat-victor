@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b3063t7q57i6h"]
 
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="1_48arq"]
-[ext_resource type="PackedScene" path="res://Scenes/Common in levels/camara.tscn" id="2_a4tuu"]
+[ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="2_a4tuu"]
 [ext_resource type="PackedScene" uid="uid://ccxnmywxicll8" path="res://Scenes/Common in levels/parallax_background.tscn" id="3_dafbs"]
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="4_32cjw"]
 
