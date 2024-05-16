@@ -45,12 +45,12 @@ scale = Vector2(1.5, 1.5)
 script = ExtResource("1_vulgi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-modulate = Color(0.0352941, 0.0823529, 0.423529, 1)
+modulate = Color(0, 0, 0, 1)
 scale = Vector2(2, 1)
 sprite_frames = SubResource("SpriteFrames_j583h")
 animation = &"Pinxos"
 autoplay = "Pinxos"
-frame_progress = 0.335586
+frame_progress = 0.620455
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("SegmentShape2D_4nkco")
