@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0kr6h70o3ynw"]
+
+[ext_resource type="Script" path="res://Scripts/pinchos.gd" id="1_efkgj"]
+[ext_resource type="Texture2D" uid="uid://c3q7j6esq6aoi" path="res://Assets/CAhins/spikes_1.png" id="2_6bk1s"]
+
+[node name="pinchos" type="Area2D"]
+scale = Vector2(0.19, 0.19)
+script = ExtResource("1_efkgj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1, 0.52623)
+texture = ExtResource("2_6bk1s")
+region_enabled = true
+region_rect = Rect2(247, 0, 126, 305)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-64, 80, -64, 64, -16, -40, 0, -48, 16, -32, 64, 80)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
