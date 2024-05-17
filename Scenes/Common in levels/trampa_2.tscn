@@ -58,4 +58,8 @@ shape = SubResource("SegmentShape2D_4nkco")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 shape = SubResource("SegmentShape2D_xvbuk")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -19,7 +19,8 @@ var invertit = false:
 			$Animation.flip_v = false
 			$Normal.set_deferred("disabled", false)
 			$Invertida.set_deferred("disabled", true)
-	
+func _ready():
+	velocity.x = 300
 func _physics_process(delta):
 	
 	if gravity == true:
@@ -36,7 +37,7 @@ func _physics_process(delta):
 	
 		#dispara()
 	
-	velocity.x = 300
+	#velocity.x = 300
 	
 	
 	#ANIMATION

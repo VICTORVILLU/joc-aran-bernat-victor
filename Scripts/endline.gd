@@ -1,6 +1,7 @@
 extends Area2D
-var cosa = ''
 
+
+# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
@@ -11,11 +12,4 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	print(body.velocity.x)
-	body.velocity.x = 20
-	print(body.velocity.x)
-	cosa = body
-	$Timer.start()
-
-func _on_timer_timeout():
-	cosa.velocity.x = 300
+	body.queue_free()
