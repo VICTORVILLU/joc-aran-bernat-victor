@@ -9,4 +9,4 @@ func _ready():
 
 func _process(delta):
 	if Input.is_action_just_pressed("restart"):
-		get_tree().change_scene_to_file("res://Scenes/map_4/map_4.tscn")
+		get_tree().change_scene_to_file("res://Scenes/map_2/map_2.tscn")
