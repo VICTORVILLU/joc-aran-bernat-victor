@@ -74,17 +74,17 @@ position = Vector2(176, 632)
 position = Vector2(192, 192)
 
 [node name="pinchos" parent="." instance=ExtResource("9_0irl2")]
-position = Vector2(7304, 304)
+position = Vector2(7304, 305)
 
 [node name="pinchos2" parent="." instance=ExtResource("9_0irl2")]
-position = Vector2(7328, 304)
+position = Vector2(7328, 305)
 
 [node name="pinchos3" parent="." instance=ExtResource("9_0irl2")]
-position = Vector2(7600, 176)
+position = Vector2(7599, 175)
 scale = Vector2(0.19, -0.19)
 
 [node name="pinchos4" parent="." instance=ExtResource("9_0irl2")]
-position = Vector2(7576, 176)
+position = Vector2(7575, 175)
 scale = Vector2(0.19, -0.19)
 
 [node name="Laser" parent="." instance=ExtResource("10_57ntf")]
@@ -98,28 +98,28 @@ scale = Vector2(1, 1.04)
 [node name="Metas" type="Node2D" parent="."]
 
 [node name="endline" parent="Metas" instance=ExtResource("11_jx6tq")]
-position = Vector2(12864, 96)
+position = Vector2(12960, 72)
 
 [node name="endline2" parent="Metas" instance=ExtResource("11_jx6tq")]
-position = Vector2(12864, 160)
+position = Vector2(12960, 136)
 
 [node name="endline3" parent="Metas" instance=ExtResource("11_jx6tq")]
-position = Vector2(12864, 288)
+position = Vector2(12960, 264)
 
 [node name="endline4" parent="Metas" instance=ExtResource("11_jx6tq")]
-position = Vector2(12864, 224)
+position = Vector2(12960, 200)
 
 [node name="endline5" parent="Metas" instance=ExtResource("11_jx6tq")]
-position = Vector2(12864, 352)
+position = Vector2(12960, 328)
 
 [node name="endline6" parent="Metas" instance=ExtResource("11_jx6tq")]
-position = Vector2(12864, 416)
+position = Vector2(12960, 392)
 
 [node name="endline7" parent="Metas" instance=ExtResource("11_jx6tq")]
-position = Vector2(12864, 480)
+position = Vector2(12960, 456)
 
 [node name="endline8" parent="Metas" instance=ExtResource("11_jx6tq")]
-position = Vector2(12864, 544)
+position = Vector2(12960, 520)
 
 [node name="Area2D2" parent="." instance=ExtResource("12_3q2q2")]
 position = Vector2(640, 648)
