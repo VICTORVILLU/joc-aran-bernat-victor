@@ -10,7 +10,7 @@ func _ready():
 func _process(delta):
 	if Global.players_alive == 0:
 		print(Global.player_winner)
-		get_tree().change_scene_to_file("res://Scenes/Menu/menu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/the_winner_is.tscn")
 
 	if Input.is_action_just_pressed("restart"):
 		get_tree().change_scene_to_file("res://Scenes/map_1/map_1.tscn")

@@ -88,7 +88,7 @@ offset_bottom = 256.0
 flat = true
 
 [node name="Options" type="Node2D" parent="."]
-position = Vector2(-48, 232)
+position = Vector2(-48, 208)
 script = ExtResource("4_qls74")
 
 [node name="BG_1" type="ColorRect" parent="Options"]
@@ -141,7 +141,7 @@ offset_bottom = 256.0
 flat = true
 
 [node name="Tutorial" type="Node2D" parent="."]
-position = Vector2(-48, 480)
+position = Vector2(-48, 440)
 script = ExtResource("5_cfshs")
 
 [node name="BG_1" type="ColorRect" parent="Tutorial"]
