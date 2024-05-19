@@ -139,6 +139,59 @@ offset_right = 1048.0
 offset_bottom = 256.0
 flat = true
 
+[node name="Tutorial" type="Node2D" parent="."]
+position = Vector2(-48, 512)
+script = ExtResource("4_qls74")
+
+[node name="BG_1" type="ColorRect" parent="Tutorial"]
+offset_left = 400.0
+offset_top = 64.0
+offset_right = 1072.0
+offset_bottom = 256.0
+color = Color(0.00784314, 0.490196, 0.968627, 0.427451)
+
+[node name="BG_2" type="ColorRect" parent="Tutorial"]
+offset_left = 408.0
+offset_top = 72.0
+offset_right = 1064.0
+offset_bottom = 248.0
+color = Color(0.180392, 0.54902, 0.67451, 0.65098)
+
+[node name="Label" type="Label" parent="Tutorial"]
+offset_left = 424.0
+offset_top = 64.0
+offset_right = 1049.0
+offset_bottom = 256.0
+theme_override_colors/font_color = Color(0.427451, 0.823529, 0.960784, 1)
+theme_override_font_sizes/font_size = 130
+text = "TUTORIAL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BG_3" type="ColorRect" parent="Tutorial"]
+visible = false
+offset_left = 424.0
+offset_top = 64.0
+offset_right = 1048.0
+offset_bottom = 256.0
+color = Color(0.196078, 0.196078, 0.494118, 0.443137)
+
+[node name="BG_4" type="ColorRect" parent="Tutorial"]
+visible = false
+offset_left = 424.0
+offset_top = 64.0
+offset_right = 1048.0
+offset_bottom = 256.0
+color = Color(0.196078, 0.196078, 0.494118, 0.443137)
+
+[node name="Button" type="Button" parent="Tutorial"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 424.0
+offset_top = 64.0
+offset_right = 1048.0
+offset_bottom = 256.0
+flat = true
+
 [connection signal="button_down" from="Play_button/Button" to="Play_button" method="_on_button_button_down"]
 [connection signal="button_up" from="Play_button/Button" to="Play_button" method="_on_button_button_up"]
 [connection signal="mouse_entered" from="Play_button/Button" to="Play_button" method="_on_button_mouse_entered"]
@@ -147,3 +200,7 @@ flat = true
 [connection signal="button_up" from="Options/Button" to="Options" method="_on_button_button_up"]
 [connection signal="mouse_entered" from="Options/Button" to="Options" method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Options/Button" to="Options" method="_on_button_mouse_exited"]
+[connection signal="button_down" from="Tutorial/Button" to="Tutorial" method="_on_button_button_down"]
+[connection signal="button_up" from="Tutorial/Button" to="Tutorial" method="_on_button_button_up"]
+[connection signal="mouse_entered" from="Tutorial/Button" to="Tutorial" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Tutorial/Button" to="Tutorial" method="_on_button_mouse_exited"]
