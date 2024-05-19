@@ -11,3 +11,6 @@ func _process(delta):
 	if Global.player_winner == "Fire_2":
 		$Text.text = "The winner is Blue Player!"
 	else:	$Text.text = "The winner is Red Player!"
+	
+	if Input.is_action_just_pressed("escape"):
+		get_tree().change_scene_to_file("res://Scenes/Menu/menu.tscn")

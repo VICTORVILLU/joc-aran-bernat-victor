@@ -50,7 +50,15 @@ flat = true
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 1440.0
-offset_bottom = 824.0
+offset_right = 1400.0
+offset_bottom = 768.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "L'equip que ha fet el joc ha estat format
+ per Aran, Víctor i Bernat. 
+El joc ha estat fet per gairabé tot l'equip.
+S'han agafat sprites (Projectils) de:  NYKNCK"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="toggled" from="Musica" to="." method="_on_musica_toggled"]
