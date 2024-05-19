@@ -4,33 +4,33 @@
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="1_yjgxg"]
 [ext_resource type="PackedScene" uid="uid://ccxnmywxicll8" path="res://Scenes/Common in levels/parallax_background.tscn" id="2_m5ilv"]
 [ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="2_pkvin"]
-[ext_resource type="PackedScene" uid="uid://b7wgkgebdh5gn" path="res://Scenes/Players/laser.tscn" id="2_wr0jf"]
 [ext_resource type="PackedScene" uid="uid://dnhs020x33f5" path="res://Scenes/Players/fire.tscn" id="6_4nk88"]
-[ext_resource type="PackedScene" uid="uid://dfp6p2ncryj4o" path="res://Scenes/Common in levels/trampa_2.tscn" id="7_hxh13"]
+[ext_resource type="PackedScene" uid="uid://8mnnsbnk8h43" path="res://Scenes/Players/fire_blue.tscn" id="7_5g7hi"]
+[ext_resource type="PackedScene" uid="uid://b7wgkgebdh5gn" path="res://Scenes/Common in levels/laser.tscn" id="7_hxh13"]
 [ext_resource type="PackedScene" uid="uid://dgxqkcmabfrj" path="res://Scenes/Common in levels/endline.tscn" id="9_bhcgv"]
 
 [node name="map_3" type="Node2D"]
 script = ExtResource("1_8qk3v")
 
-[node name="Laser6" parent="." instance=ExtResource("2_wr0jf")]
+[node name="Laser6" parent="." instance=ExtResource("7_hxh13")]
 position = Vector2(4720, 512)
 
-[node name="Laser7" parent="." instance=ExtResource("2_wr0jf")]
+[node name="Laser7" parent="." instance=ExtResource("7_hxh13")]
 position = Vector2(4720, 352)
 
-[node name="Laser4" parent="." instance=ExtResource("2_wr0jf")]
+[node name="Laser4" parent="." instance=ExtResource("7_hxh13")]
 position = Vector2(976, 160)
 
-[node name="Laser5" parent="." instance=ExtResource("2_wr0jf")]
+[node name="Laser5" parent="." instance=ExtResource("7_hxh13")]
 position = Vector2(2512, 352)
 
-[node name="Laser2" parent="." instance=ExtResource("2_wr0jf")]
+[node name="Laser2" parent="." instance=ExtResource("7_hxh13")]
 position = Vector2(976, 704)
 
-[node name="Laser3" parent="." instance=ExtResource("2_wr0jf")]
+[node name="Laser3" parent="." instance=ExtResource("7_hxh13")]
 position = Vector2(976, 352)
 
-[node name="Laser" parent="." instance=ExtResource("2_wr0jf")]
+[node name="Laser" parent="." instance=ExtResource("7_hxh13")]
 position = Vector2(976, 512)
 
 [node name="MapsTilemap" parent="." instance=ExtResource("1_yjgxg")]
@@ -40,57 +40,23 @@ layer_0/tile_data = PackedInt32Array(1572866, 65537, 0, 1572867, 65537, 0, 15728
 scale = Vector2(1.25, 1.25)
 transform = Transform2D(1.25, 0, 0, 1.25, 0, 0)
 
-[node name="Fire" parent="." instance=ExtResource("6_4nk88")]
-position = Vector2(3.05176e-05, 728)
-
 [node name="camara" parent="." instance=ExtResource("2_pkvin")]
 position = Vector2(8, 128)
 
+[node name="Fire" parent="." instance=ExtResource("6_4nk88")]
+position = Vector2(3.05176e-05, 728)
+scale = Vector2(0.835, 0.835)
+
+[node name="fire_blue" parent="." instance=ExtResource("7_5g7hi")]
+position = Vector2(0, 376)
+
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_left = 96.0
 offset_top = 424.0
 offset_right = 5688.0
 offset_bottom = 440.0
 color = Color(0, 1, 0, 1)
-
-[node name="Area2D" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(360, 744)
-
-[node name="Area2D2" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(360, 472)
-rotation = 3.14159
-
-[node name="Area2D3" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(360, 392)
-
-[node name="Area2D4" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(360, 120)
-rotation = 3.14159
-
-[node name="Area2D5" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(1424, 392)
-
-[node name="Area2D6" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(1424, 472)
-rotation = 3.14159
-
-[node name="Area2D8" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(2720, 312)
-rotation = 3.14159
-
-[node name="Area2D7" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(4200, 392)
-
-[node name="Area2D9" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(4200, 472)
-rotation = 3.14159
-
-[node name="Area2D10" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(6192, 744)
-
-[node name="Area2D11" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(6184, 120)
-rotation = 3.14159
 
 [node name="metas" type="Node2D" parent="."]
 
@@ -111,6 +77,3 @@ position = Vector2(6512, 584)
 
 [node name="endline6" parent="metas" instance=ExtResource("9_bhcgv")]
 position = Vector2(6512, 520)
-
-[node name="Area2D12" parent="." instance=ExtResource("7_hxh13")]
-position = Vector2(2992, 744)

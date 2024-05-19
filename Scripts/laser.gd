@@ -12,8 +12,10 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	print(body.name)
-	if body.name in ["Fire","fire_blue"]:
+	if body.name == "Fire" or body.name == "Fire_2":
+		if Global.players_alive == 1:
+			Global.player_winner = body.name
+		Global.players_alive -= 1
 		body.queue_free()
 	elif body.name in ['escena_bala','escena_bala_blava','@CharacterBody2D@2','@CharacterBody2D@3','@CharacterBody2D@4','@CharacterBody2D@5','@CharacterBody2D@6']:
 		queue_free()
@@ -22,7 +24,6 @@ func _on_body_entered(body):
 
 
 func _on_area_entered(area):
-	print(area.name)
 	if area.name in ['escena_bala','escena_bala_blava','@CharacterBody2D@2','@CharacterBody2D@3','@CharacterBody2D@4','@CharacterBody2D@5','@CharacterBody2D@6',"Area2D"]:
 		queue_free()
 		area.queue_free()

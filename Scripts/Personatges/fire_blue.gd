@@ -20,8 +20,9 @@ var invertit = false:
 			$Normal.set_deferred("disabled", false)
 			$Invertida.set_deferred("disabled", true)
 func _ready():
-	velocity.x = 300
+	pass
 func _physics_process(delta):
+	velocity.x = 300
 	
 	if gravity == true:
 		velocity.y = 600

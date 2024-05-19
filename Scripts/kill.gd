@@ -7,8 +7,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Global.players_alive == 0:
-		get_tree().change_scene_to_file("res://Scenes/Menu/menu.tscn")
+	pass
 
 
 func _on_body_entered(body):

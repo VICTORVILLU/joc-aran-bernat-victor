@@ -12,4 +12,8 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	body.queue_free()
+	if body.name == "Fire" or body.name == "Fire_2":
+		if Global.players_alive == 1:
+			Global.player_winner = body.name
+		Global.players_alive -= 1
+		body.queue_free()

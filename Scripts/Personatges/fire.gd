@@ -20,8 +20,9 @@ var invertit = false:
 			$Normal.set_deferred("disabled", false)
 			$Invertida.set_deferred("disabled", true)
 func _ready():
-	velocity.x = 300
+	pass
 func _physics_process(delta):
+	velocity.x = 300
 	
 	if gravity == true:
 		velocity.y = 600
@@ -30,14 +31,8 @@ func _physics_process(delta):
 		velocity.y = -600
 		invertit = true
 	# Handle jump.
-	
 	if Input.is_action_just_pressed("player_fire") and (is_on_ceiling() or is_on_floor()):
 		gravity = !gravity
-	
-	
-		#dispara()
-	
-	#velocity.x = 300
 	
 	
 	#ANIMATION
