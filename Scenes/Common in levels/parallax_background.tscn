@@ -9,7 +9,7 @@
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -568.0
 offset_top = -48.0
-offset_right = 14352.0
+offset_right = 29800.0
 offset_bottom = 328.0
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
@@ -17,7 +17,8 @@ motion_scale = Vector2(1.2, 1.2)
 
 [node name="CloudLayer2" type="Sprite2D" parent="ParallaxLayer2"]
 texture_repeat = 2
-position = Vector2(10000, 240)
+position = Vector2(12916, 240)
+scale = Vector2(1.1944, 1)
 texture = ExtResource("1_4yco6")
 region_enabled = true
 region_rect = Rect2(0, 0, 30000, 400)
@@ -27,7 +28,8 @@ motion_scale = Vector2(1.5, 1.5)
 
 [node name="CloudLayerB1" type="Sprite2D" parent="ParallaxLayer3"]
 texture_repeat = 2
-position = Vector2(9992, 368)
+position = Vector2(12128, 368)
+scale = Vector2(1.1424, 1)
 texture = ExtResource("2_it1wr")
 region_enabled = true
 region_rect = Rect2(0, 0, 30000, 400)
@@ -37,8 +39,8 @@ motion_scale = Vector2(1.7, 1.7)
 
 [node name="CloudLayer1" type="Sprite2D" parent="ParallaxLayer"]
 texture_repeat = 2
-position = Vector2(10000, 568)
-scale = Vector2(0.96, 0.96)
+position = Vector2(12052, 568)
+scale = Vector2(1.0968, 0.96)
 texture = ExtResource("3_1ltna")
 region_enabled = true
 region_rect = Rect2(0, 0, 30000, 400)

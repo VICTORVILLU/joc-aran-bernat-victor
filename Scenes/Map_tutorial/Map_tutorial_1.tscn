@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://b6uq86gw7ahbc"]
+[gd_scene load_steps=10 format=3 uid="uid://b6uq86gw7ahbc"]
 
+[ext_resource type="Script" path="res://Scripts/Map_tutorial_1.gd" id="1_2cwbu"]
 [ext_resource type="PackedScene" uid="uid://ccxnmywxicll8" path="res://Scenes/Common in levels/parallax_background.tscn" id="1_eq2xv"]
 [ext_resource type="PackedScene" uid="uid://b04l6wbl7urab" path="res://Scenes/Common in levels/camara.tscn" id="2_7ftwt"]
 [ext_resource type="PackedScene" uid="uid://w4h6586m6g1s" path="res://Scenes/Common in levels/Tilemaps/maps_tilemap.tscn" id="3_1wyij"]
@@ -7,10 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://c0kr6h70o3ynw" path="res://Scenes/Common in levels/pinchos.tscn" id="4_vyqi0"]
 [ext_resource type="PackedScene" uid="uid://b7wgkgebdh5gn" path="res://Scenes/Common in levels/laser.tscn" id="5_31exh"]
 [ext_resource type="PackedScene" uid="uid://dgxqkcmabfrj" path="res://Scenes/Common in levels/endline.tscn" id="6_86bq8"]
+[ext_resource type="PackedScene" uid="uid://8mnnsbnk8h43" path="res://Scenes/Players/fire_blue.tscn" id="8_0dstq"]
 
 [node name="TUTORIAL" type="Node2D"]
-
-[node name="ParallaxBackground" parent="." instance=ExtResource("1_eq2xv")]
+script = ExtResource("1_2cwbu")
 
 [node name="camara" parent="." instance=ExtResource("2_7ftwt")]
 
@@ -67,6 +68,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="instruccions"]
 modulate = Color(0, 0, 0, 1)
@@ -78,6 +80,7 @@ offset_right = 2147.0
 offset_bottom = 242.0
 theme_override_font_sizes/font_size = 18
 text = "HAS      ENTRAT      AL      TUTORIAL,      PER      APRENDRE      A      JUGAR      HAURÀS      DE      SEGUIR      TOTES      LES      INSTRUCCIONS      QUE      ET      DIGUEM.      MOLTS      ÀNIMS!            RECORDA      QUE      SI      SURTS      DEL      MAPA       O       LA       CÀMARA       T'AVANÇA,       ET       MORTS..."
+metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="instruccions"]
 modulate = Color(0, 0, 0, 1)
@@ -89,6 +92,7 @@ offset_right = 3727.0
 offset_bottom = 242.0
 theme_override_font_sizes/font_size = 18
 text = "SI      ETS      EL      PERSONATGE      VERMELL      PREM      LA      TECLA:      ESPAI.             SI      ETS      EL      PERSONATGE      BLAU      PREM      LA      TECLA:      FLETXA CAP AMUNT."
+metadata/_edit_use_anchors_ = true
 
 [node name="Label4" type="Label" parent="instruccions"]
 modulate = Color(0, 0, 0, 1)
@@ -152,3 +156,8 @@ offset_right = 13556.0
 offset_bottom = 239.0
 theme_override_font_sizes/font_size = 18
 text = "FANTÀSTIC!       PER       ÚLTIM,       HAS       DE       CREUAR       LA       META!       I       CELEBRAR       LA       VICTÒRIA!"
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_eq2xv")]
+
+[node name="Fire_2" parent="." instance=ExtResource("8_0dstq")]
+position = Vector2(-416, 480)

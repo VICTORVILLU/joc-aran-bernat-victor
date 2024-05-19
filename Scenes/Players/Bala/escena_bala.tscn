@@ -60,6 +60,8 @@ script = ExtResource("1_1gydi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 modulate = Color(7.101, 4.142, 1, 1)
+position = Vector2(-3.97364e-06, -6.59625e-06)
+scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_4h04j")
 animation = &"air"
 frame = 4
